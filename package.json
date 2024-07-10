@@ -1,11 +1,19 @@
 {
   "name": "weather-app",
+  "homepage": "https://dahalsandesh.github.io/Weather-App-React",
+
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+   "dev": "vite",
+   "build": "vite build",
+   "serve": "vite preview",
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist"
+}
+
+
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -23,6 +31,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9"
